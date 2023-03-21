@@ -1,0 +1,120 @@
+#name of the output file with basic information
+INFO_FILENAME	sim_info
+
+#write warnings into this file
+WARNINGS_FILENAME	/dev/null
+
+#seed for rand(), 0 for random seed
+SEED	123
+
+#box type 
+#0: reflecting rectangle
+#1: hybrid rectangle: top/bottom is reflecting, left/right periodic
+#2: zero gradient rectangle
+BOX_TYPE    1
+
+#box dimensions
+BOX_XMIN    -0.5
+BOX_YMIN    -0.5
+BOX_XMAX    0.5
+BOX_YMAX    0.5
+
+#number of particles
+NOF_PARTICLES_X	    50
+NOF_PARTICLES_Y	    50
+
+#relax the initial graph into a honeycomb pattern, yes or no
+RELAX_FIRST_GRAPH   no
+
+#timestep size, -1 for adaptive
+DELTA_T     -1
+
+#time interval between binary outputs
+DELTA_T_OUTPUT      0.001
+
+#binary output every n-th step, -1 for DELTA_T_OUTPUT
+EVERY_NTH_STEPS_OUTPUT  -1
+
+#maximum simulation time, -1 for infinite
+MAX_T   0.1
+
+#maximumt simulation time steps, -1 for infinite
+MAX_STEPS   -1
+
+#ideal gas: adiabatic exponent
+#monoatomar gas, 2D: gamma = 2
+#3D gas: gamma = 5/3 ( = 1.666...)
+#3D gas, two-atomic: gamma = 7/5 ( = 1.4 )
+GAMMA   1.666666
+
+#time integration: Courant-Friedrich-Levy coefficient
+CFL     0.4
+
+#velocity update function of the Voronoi particles
+#0: no update (Euler)
+#1: Lagrangian
+VELOCITY_UPDATE_FUNCTION    1
+
+#mesh regularization function (updates the velocity of the voronoi particles)
+#0: no regularization
+#1: Arepo 1
+#2: Arepo 2 (cold flows), warning: only works with fixed time step
+MESH_REGULATION_FUNCTION    1
+MESH_ETA    0.25
+MESH_CHI    1.0
+MESH_ROUNDNESS_CORRECTION   no
+MESH_OMEGA  0.3
+MESH_PSI    0.5
+
+#which slope limiter should be used?
+#0: no slope limiter
+#1: Arepo
+#2: Tess
+SLOPE_LIMITER   1
+SL_THETA    1
+
+#adaptive mesh refinement
+ADAPTIVE_MESH_REFINEMENT    no
+MAX_CELL_VOLUME     1.2
+
+#delete zero length edges after constructing the graph, yes or no
+DEL_ZERO_EDGES  no
+
+#minimum values for mass density, energy density and pressure. -1 for no minimum value
+#note: mass and energy can be lost
+MASS_DENSITY_FLOOR  -1
+ENERGY_DENSITY_FLOOR    -1
+PRESSURE_FLOOR      -1
+
+#external acceleration (fluid)
+ENABLE_ACCELERATION     no
+
+ACCELERATION_X  0
+ACCELERATION_Y  0
+
+#obstacle
+OBSTACLE    no
+
+#Circle
+RADIUS      0.1
+CIRCLE_X    0
+CIRCLE_Y    0
+CIRCLE_DR   0.1
+CIRCLE_DPHI 0.5
+
+#movement of the obstacle
+#
+
+#initial velocity
+OBS_VX      0
+OBS_VY      0
+
+#external acceleration
+OBS_AX      0
+OBS_AY      0
+
+#mass
+OBS_MASS    1
+
+#floating
+OBS_FLOATING    no

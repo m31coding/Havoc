@@ -1,0 +1,4 @@
+.DS_Store
+.idea
+source_code/*.o
+source_code/havoc
