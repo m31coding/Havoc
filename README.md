@@ -79,7 +79,7 @@ I owe lots of thanks to my supervisor Prof. Kley, PD Dr. Speith and the whole Co
 
 Here are some links to movies (click on the images) that show the code in action. 
 
-[![Sweep line algorithm - Voronoi tesselation](media/sweep-line-algorithm.png)](https://youtu.be/k2P9yWSMaXE "Sweep line algorithm - Voronoi tesselation")
+[![Sweep line algorithm - Voronoi tesselation](media/sweep-line-algorithm.png)](https://youtu.be/H2ICS86rdH4 "Sweep line algorithm - Voronoi tesselation")
 
 [![Kelvin-Helmholtz instability](media/kelvin-helmholtz.jpg)](https://youtu.be/nuK9PvlpUNg "Kelvin-Helmholtz instability")
 
